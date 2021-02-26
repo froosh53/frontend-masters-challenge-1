@@ -1,4 +1,4 @@
-#Collection of my submissions for the Frontend Mentor Challenges#
+# Collection of my submissions for the Frontend Mentor Challenges
 
 + Live version of projects will be up in the near future.
 
