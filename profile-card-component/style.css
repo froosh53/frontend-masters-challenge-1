@@ -24,8 +24,10 @@ body {
     height: 100vh;
     font-family: 'Kumbh Sans', sans-serif;
     font-size: 18px;
-    background-color: var(--dark-cyan);
     overflow: hidden;
+    background: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg), var(--dark-cyan);
+    background-repeat: no-repeat;
+    background-position: right calc(47vw + 10%) bottom 38vh, left calc(40vw + 15%) top 54vh;
 }
 
 .container, .card-container, .card-middle, .personal-info, .attribution {
@@ -91,22 +93,6 @@ body {
     text-align: center;
     height: 90px;
     width: 100%;    
-}
-
-/* Background */
-
-.bg-top, .bg-bottom {
-    position: absolute;
-}
-
-.bg-top {
-    transform: translate(0%, -50%);
-}
-
-.bg-bottom {
-    bottom: 0;
-    right: 0;
-    transform: translate(0%, 50%);
 }
 
 /* Text Styles*/
