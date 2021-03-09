@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colors */
+
+:root {
+    --dark-cyan:hsl(185, 75%, 39%);
+    --very-dark-blue:hsl(229, 23%, 23%);
+    --dark-greyish-blue:hsl(227, 10%, 46%);
+    --dark-grey:hsl(0, 0%, 59%);
+}
+
+/* Styles */
+
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {    
+    width: 100%;
+    height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: var(--dark-cyan);
+    overflow: hidden;
+}
+
+.container, .card-container, .card-middle, .personal-info, .attribution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container, .card-middle {
+    flex-direction: column;
+}
+
+.container {
+    height: 100vh;
+    position: relative;
+}
+
+.card-container {
+    width: 350px;
+    height: 374px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 5px 5px 20px -10px rgba(0,0,0,0.75);
+}
+
+.card-top {
+    width: 100%;
+    height: 140px;
+    background-image: url(./images/bg-pattern-card.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; 
+}
+
+.profile-pic {
+    border: 5px solid #fff;
+    border-radius: 50%;
+    margin-top: -83px;
+       
+}
+
+.card-middle {
+    width: 100%;
+    height: 145px;
+    row-gap: 10px;
+    border-bottom: rgb(223, 223, 223) solid 0.5px;
+}
+
+.personal-info {
+    padding-top: 10px;
+}
+
+.name {
+    padding-right: 10px;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    height: 90px;
+    width: 100%;    
+}
+
+/* Background */
+
+.bg-top, .bg-bottom {
+    position: absolute;
+}
+
+.bg-top {
+    transform: translate(0%, -50%);
+}
+
+.bg-bottom {
+    bottom: 0;
+    right: 0;
+    transform: translate(0%, 50%);
+}
+
+/* Text Styles*/
+
+.name, .number {
+    font-weight: 700;
+    color: var(--very-dark-blue)
+}
+
+.age, .location, .text {
+    color: var(--dark-greyish-blue)
+}
+
+.location {
+    font-size: 0.75em;
+}
+
+.text {
+    font-size: 0.65em;
+    letter-spacing: 1px;
+    padding-top: 6px;
+}
+
+/* Other */
+
+.attribution { 
+    text-align: center;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 5vh;
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
