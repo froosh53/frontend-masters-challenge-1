@@ -1,3 +1,3 @@
 # Frontend Mentor Challenge
 
-+ **live:** profile-card-component-froosh53.vercel.app
++ **live:** [Profile Card Component](profile-card-component-froosh53.vercel.app)
